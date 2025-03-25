@@ -9,7 +9,7 @@
 </head>
 <body>
  
-<!-- Login Page -->
+<!-- Login  Page -->
 <div id="login-page">
 <header>
 <h1>EventMaster</h1>
@@ -44,5 +44,48 @@
 <h2>Plan, Organize, and Execute Events Like a Pro</h2>
 <p>Seamless scheduling, guest management, and vendor coordination in one app.</p>
 </section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <p>We offer a range of event planning services to ensure your events are seamless and unforgettable.</p>
+     
+    <div class="services-container">
+    <div class="service">
+    <img src="assets/img/event.jpg" alt="Event Planning">
+    <h3>Event Planning</h3>
+    <p>From weddings to corporate events, we handle everything to make your event a success.</p>
+    <button class="cta-button" onclick="serviceDetails('event-planning')">Select</button>
+    </div>
+     
+    <div class="service">
+    <img src="assets/img/vendor.jpg" alt="Vendor Coordination">
+    <h3>Vendor Coordination</h3>
+    <p>We connect you with the best caterers, decorators, and entertainment providers.</p>
+    <button class="cta-button" onclick="serviceDetails('vendor-coordination')">Select</button>
+    </div>
+     
+    <div class="service">
+    <img src="assets/img/guest.jpg" alt="Guest Management">
+    <h3>Guest Management</h3>
+    <p>We ensure smooth RSVP tracking, seating arrangements, and guest communications.</p>
+    <button class="cta-button" onclick="serviceDetails('guest-management')">Select </button>
+    </div>
+    </div>
+    </section>
+     
+    <!-- Personal Information Form -->
+    <section id="personal-info-form" class="personal-info" style="display: none;">
+    <h2>Fill Your Personal Information</h2>
+    <form onsubmit="submitForm(event)">
+    <input type="text" id="full-name" placeholder="Full Name" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="tel" id="phone" placeholder="Phone Number" required><br>
+    <textarea id="event-details" placeholder="Event Details" required></textarea><br>
+    <button type="submit" class="cta-button">Submit</button>
+    <button type="button" class="cta-button cancel-button" onclick="closeForm()">Cancel</button>
+    </form>
+    </section>
+
 </body>
 </html>
