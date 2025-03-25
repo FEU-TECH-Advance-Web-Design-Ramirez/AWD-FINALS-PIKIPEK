@@ -87,5 +87,73 @@
     </form>
     </section>
 
+    <!-- Guest List Tracking -->
+<section id="guest-list" class="guest-list">
+    <h2>Guest List Tracking</h2>
+    <form onsubmit="addGuest(event)" class="guest-form">
+    <input type="text" id="guest-name" placeholder="Guest Name" required>
+    <select id="rsvp-status">
+    <option value="Attending">Attending</option>
+    <option value="Not Attending">Not Attending</option>
+    <option value="Maybe">Maybe</option>
+    </select>
+    <button type="submit" class="cta-button">Add Guest</button>
+    </form>
+     
+    <table>
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>RSVP Status</th>
+    <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="guest-list-body">
+    <!-- Guests will be added here dynamically -->
+    </tbody>
+    </table>
+    </section>
+     
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+    <h2>About Us</h2>
+    <p>Meet the faces behind EventMaster! We are passionate event planners dedicated to making your events extraordinary.</p>
+    <div class="about-images">
+    <div class="about-person">
+    <img src="assets/img/cortan.png" alt="Photo of first person" class="about-image">
+    <p class="about-name">John Cortan</p>
+    <p class="about-socials">
+    <a href="https://www.instagram.com/johncrts/" target="_blank">
+    <img src="assets/img/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://github.com/JohnRosedelCortan" target="_blank">
+    <img src="assets/img/github.png" alt="GitHub">
+    </a>
+    <a href="mailto:johncortan37@gmail.com">
+    <img src="assets/img/gmail.png" alt="Gmail">
+    </a>
+    </p>
+     
+    </div>
+    <div class="about-person">
+    <img src="assets/img/francisco.png" alt="Photo of second person" class="about-image">
+    <p class="about-name">Christian Francisco</p>
+    <p class="about-socials">
+    <a href="https://www.instagram.com/mellerzpeek/" target="_blank">
+    <img src="assets/img/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://github.com/MELLERZPEEK" target="_blank">
+    <img src="assets/img/github.png" alt="GitHub">
+    </a>
+    <a href="mailto:christianfrancisco@example.com">
+    <img src="assets/img/gmail.png" alt="Gmail">
+    </a>
+    </p>
+     
+    </div>
+    </div>
+    </section>
+     
+
 </body>
 </html>
