@@ -226,7 +226,7 @@ input {
     background-color: #ff6b6b;
 }
 
-/* Responsive Adjustments */
+/* Responsive  Adjustments */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
