@@ -35,3 +35,21 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Please enter a username and password.");
         }
         }
+
+        // Logout Function
+    function logout() {
+        document.getElementById("landing-page").style.display = "none";
+        document.getElementById("login-page").style.display = "block";
+       
+        // Clear login state
+        localStorage.removeItem("isLoggedIn");
+        }
+       
+        // Show form when a service is selected
+        function serviceDetails(service) {
+        document.getElementById("personal-info-form").style.display = "block";
+        document.getElementById("event-details").value = "Interested in " + service.replace("-", " ");
+       
+        // Save selected service
+        localStorage.setItem("selectedService", "Interested in " + service.replace("-", " "));
+        }
