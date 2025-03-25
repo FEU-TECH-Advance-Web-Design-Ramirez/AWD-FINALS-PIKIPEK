@@ -53,3 +53,19 @@ document.addEventListener("DOMContentLoaded", function() {
         // Save selected service
         localStorage.setItem("selectedService", "Interested in " + service.replace("-", " "));
         }
+        // Hide form when cancel is clicked
+    function closeForm() {
+        document.getElementById("personal-info-form").style.display = "none";
+       
+        // Remove stored service selection
+        localStorage.removeItem("selectedService");
+        }
+       
+        // Handle form submission
+        function submitForm(event) {
+        event.preventDefault();
+        alert("Your information has been submitted successfully!");
+        closeForm();
+        }
+       
+        let guests = [];
