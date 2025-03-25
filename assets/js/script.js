@@ -69,3 +69,43 @@ document.addEventListener("DOMContentLoaded", function() {
         }
        
         let guests = [];
+
+          // Add guest and store in localStorage
+    function addGuest(event) {
+        event.preventDefault();
+       
+        const name = document.getElementById("guest-name").value;
+        const rsvp = document.getElementById("rsvp-status").value;
+       
+        if (name.trim() === "") {
+        alert("Please enter a guest name.");
+        return;
+        }
+       
+        guests.push({ name, rsvp });
+        localStorage.setItem("guests", JSON.stringify(guests)); // Save to localStorage
+        updateGuestList();
+        document.getElementById("guest-name").value = "";
+        }
+       
+        // Remove guest and update localStorage
+        function removeGuest(index) {
+        guests.splice(index, 1);
+        localStorage.setItem("guests", JSON.stringify(guests)); // Update storage
+        updateGuestList();
+        }
+       
+        // Update guest list UI
+        function updateGuestList() {
+        const tbody = document.getElementById("guest-list-body");
+        tbody.innerHTML = "";
+       
+        guests.forEach((guest, index) => {
+        const row = `<tr>
+        <td>${guest.name}</td>
+        <td>${guest.rsvp}</td>
+        <td><button onclick="removeGuest(${index})" class="cta-button cancel-button">Remove</button></td>
+        </tr>`;
+        tbody.innerHTML += row;
+        });
+        }
