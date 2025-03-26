@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/emaster.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">EventMaster</h3>
@@ -124,4 +124,4 @@ WD-ProjectName
 | Title | Purpose | Link |
 |-|-|-|
 | w3schools | For coding | https://www.w3schools.com/css/default.asp |
-| w3schools | For coding | https://www.figma.com |
+| w3schools | For design | https://www.figma.com |
