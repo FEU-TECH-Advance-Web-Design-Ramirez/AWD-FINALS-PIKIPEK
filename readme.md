@@ -58,7 +58,7 @@
 ## Overview
 
 <!-- TODO: To be changed -->
-<!-- The following are just sample -->
+<!-- The following are just sample  -->
 Description of the project in details.
 
 Guiding Question:
